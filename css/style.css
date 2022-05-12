@@ -605,7 +605,7 @@ h1, h2, h3, h4, h5, h6, figure {
   left: 0;
   top: .05em;
   font-family: 'icomoon';
-  speak: none;
+  speak-as: none;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -1725,10 +1725,10 @@ form label {
   font-size: 20px;
   font-weight: 400;
   margin: 0 0 10px 0;
-  color: #09C6AB;
+  color: black ;
 }
 .fh5co-card-item .fh5co-text span {
-  color: #b3b3b3;
+  color: #000;
   font-size: 16px;
   font-weight: 400;
 }
@@ -1739,7 +1739,7 @@ form label {
   transition: 0.5s;
 }
 .fh5co-card-item .fh5co-text span.btn {
-  color: #fff !important;
+  color: #000 !important;
   opacity: 1;
   visibility: visible;
   bottom: 0;
@@ -1770,8 +1770,8 @@ form label {
   opacity: 1;
   visibility: visible;
   bottom: 0px;
-  border: 2px solid #0adec0 !important;
-  background: #0adec0 !important;
+  border: 2px solid black !important;
+  background: yellow !important;
 }
 .fh5co-card-item:hover figure .overlay, .fh5co-card-item:focus figure .overlay {
   opacity: 1;
