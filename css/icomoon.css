@@ -69,6 +69,9 @@
 .icon-clock:before {
   content: "\e014";
 }
+.icon-airplane:before {
+  content: "\e9af";
+}
 .icon-watch:before {
   content: "\e015";
 }

@@ -96,7 +96,7 @@ h1, h2, h3, h4, h5, h6, figure {
   position: absolute;
   top: 0;
   left: 0;
-  margin: 0;
+  margin: none;
   padding: 0;
   width: 100%;
   padding: 20px 0;
@@ -301,6 +301,7 @@ h1, h2, h3, h4, h5, h6, figure {
   border-top: 10px solid #09C6AB;
   position: relative;
   width: 100%;
+  
   -webkit-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
   -moz-box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
   box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.15);
@@ -1124,9 +1125,86 @@ form label {
   font-weight: 700;
   text-transform: uppercase;
 }
+.fab-container  {
+  position: fixed;
+  bottom: 50px;
+  right: 50px; 
+  z-index: 999;
+  cursor: pointer;
+}
+
+.fab-icon-holder {
+width: 40px;
+height: 40px;
+border-radius: 100%;
+background: #0d6efd;
+box-shadow: 0 6px  20px rgba(0, 0, 0, 0.2);
+}
+
+.fab-icon-holder:hover {
+opacity:0.8 ;
+}
+
+.fab-icon-holder a {
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100%;
+font-style: 25px;
+color: #ffff;
+}
+.fab-icon-holder i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  font-style: 15px;
+  color: #fff;
+  }
+.fab {
+width: 70px;
+height: 70px;
+background: yellow;
+
+}
+.fab-options{
+list-style-type: none;
+margin: 0;
+position: absolute;
+bottom: 70px;
+right: 0;
+opacity: 0;
+transition: all 0.3s ease;
+transform: scale(0);
+transform-origin: 85% bottom;
+}
+
+.fab:hover + .fab-options, .fab-options:hover {
+opacity: 1;
+transform: scale(1);
+
+}
+.fab-options li {
+display: flex;
+justify-content: flex-end;
+padding: 15px;
+}
+
+.fab-label {
+padding: 2px 5px;
+align-self: center;
+user-select: none;
+white-space: nowrap;
+border-radius: 3px;
+font-size: 16px;
+background: white;
+}
+
+
 
 .gototop {
   position: fixed;
+  background-image: url(https://github.com/Sumatron/seniorviajes/blob/gh-pages/images/logoviajes.svg);
   bottom: 20px;
   right: 20px;
   z-index: 999;
@@ -1144,7 +1222,7 @@ form label {
   width: 50px;
   height: 50px;
   display: table;
-  background: rgba(0, 0, 0, 0.5);
+ 
   color: #fff;
   text-align: center;
   -webkit-border-radius: 4px;
